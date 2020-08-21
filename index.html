@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simulator 1</title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="js/snippet.js"></script>
+    <link rel="stylesheet" href="css/snippet.css">
+
+
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+    	#box-one{
+    		margin-top: 20px;
+    		color: black;
+    		font-size: 0.7rem;
+    		text-align: center;
+    	}
+    	
+    </style>
+
+
+</head>
+<body onload="ready()" style="background-image: linear-gradient(to right,rgb(250,158,73),rgb(242,86,75));">
+
+
+	<div class="container-fluid" id="box-one">
+		<h3>WELCOME TO THE SIMULATOR</h3>
+	</div>
+	
+	
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6 mt-3">
+                <div style="max-width: 52rem;" id="card-info">
+                        <p style="color: cyan;">Write an html code in code snippet to display your CV navigator,your institute website, Department Website and Tutorial Website for specific subject :</p>
+                        <p style="color: white;"> 1. Your name should be in bold and it should be in the header.<br>
+                                2. Give your Contact details like email and mob.no in the footer.<br>
+                                3. Prepare a nav bar that contains link of your Facebook, Twitter and LinkedIn Accounts</p>
+                    </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3">
+                <div style="max-width: 52rem;" id="instruction-card">
+                    
+                        <h6 style="color: cyan;">INSTRUCTION BOX</h6>
+                    <p class="card-text">
+                        1. Click on the buttons to get your html elements pasted on your code window.<br>
+                        2. Arrange these elements on the code window to get the proper structure of a HTML document.
+                        <br>  
+
+                        3. You can see the preview of your arranged code in output box.<br>
+                        4. Click on SUBMIT button to check your errors.<br>
+                        5. Press RESET button to reset your code.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: 35px;">
+            
+            <div class="col-1 col-lg-1">
+                <button class="btn" id="one" onclick="openForm1()" style="background-color: black;color: cyan;"><b>&ltanchor&gt</b></button><br>
+
+                <button class="btn" id="two" onclick="openForm2()" style="background-color: black;color: cyan;"><b>&ltnav&gt</b></button><br>
+
+
+                <button class="btn" id="three" onclick="openForm3()"style="background-color: black;color: cyan;"><b>&lttitle&gt</b></button><br>
+
+
+                <button class="btn" id="four" onclick="openForm4()" style="background-color: black;color: cyan;"><b>&ltfooter&gt</b></button><br>
+
+
+                <button class="btn" id="five" onclick="openForm5()" style="background-color: black;color: cyan;"><b>&ltbody&gt</b></button><br>
+
+
+                
+            </div>
+            <div class="col-1"></div>
+
+            <div class="col-1 col-lg-1">
+               <button class="btn" id="six" onclick="openForm6()" style="background-color: black;color: cyan;"><b>&ltheader&gt</b></button><br>
+
+
+                <button class="btn" id="seven" onclick="openForm7()" style="background-color: black;color: cyan;"><b>&lthtml&gt</b></button><br>
+
+
+                <button class="btn" id="sev" onclick="ready()" style="background-color: yellow;color: black;"><b>RESET</b></button><br>
+
+
+                <button class="btn" id="et" onclick="submitt()" style="background-color: skyblue;color: black;"><b>SUBMIT</b></button><br> 
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+    <div id="container">
+                        <div id="editor"></div>
+                        <iframe id="iframe" frameBorder="0"></iframe>
+                    </div>
+
+
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>

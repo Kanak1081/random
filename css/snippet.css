@@ -1,0 +1,138 @@
+html,body { height:100%; width:10;}
+
+#editor {
+/*height: 90%;
+width:60%;*/
+display:inline-block;
+}
+
+#container {
+
+
+/*height:55%;
+width:60%;
+margin-left: 370px;
+margin-top: -240px;*/
+
+
+white-space: nowrap;
+
+/* overflow : hidden; */
+/* position:relative; */
+}
+
+#iframe {
+/*height:90%;*/
+display:inline-block;
+/*width:60%;*/
+border: 3px solid black;
+
+}
+
+/* disable tag matching */
+.ace_editor .ace_marker-layer .ace_bracket { display: none }
+
+@media only screen and (max-width: 768px){
+	[id="container"]{
+		width: 30%;
+		height: 40%;
+		margin-left: 200px;
+		margin-top: -100px;
+	}
+	[id="iframe"]{
+		width: 30%;
+		height: 40%;
+		margin-top: -100px;
+	}
+	[id="editor"]{
+		width: 30%;
+		height: 40%;
+	}
+	[id="instruction-card"]{
+		background-color: #232b3b;
+            border-radius: 10px;
+            padding: 5px 5px 5px 10px;
+            color: white;
+            height: 13rem;
+	}
+	[id="card-info"]{
+		background-color: #232b3b;
+            border-radius: 10px;
+            padding: 25px 5px 5px 10px;
+            height: 13rem;
+	}
+	[class="btn"]{
+		width: 120px;
+		height: 50px;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 1000px){
+	[id="container"]{
+		width: 50%;
+		height: 30%;
+		margin-top: -150px;
+	}
+	[id="iframe"]{
+		width: 50%;
+		height: 30%;
+		margin-top: -100px;
+	}
+	[id="editor"]{
+		width: 50%;
+		height: 30%;
+	}
+	[id="instruction-card"]{
+		background-color: #232b3b;
+            border-radius: 10px;
+            padding: 5px 5px 5px 10px;
+            color: white;
+            height: 13rem;
+	}
+	[id="card-info"]{
+		background-color: #232b3b;
+            border-radius: 10px;
+            padding: 25px 5px 5px 10px;
+            height: 13rem;
+	}
+	[class="btn"]{
+		width: 120px;
+		height: 50px;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 1400px){
+	[id="container"]{
+		width: 55%;
+		height: 60%;
+		margin-top: -250px;
+		margin-left: 400px;
+	}
+	[id="iframe"]{
+		width: 55%;
+		height: 60%;
+		
+	}
+	[id="editor"]{
+		width: 55%;
+		height: 60%;
+	}
+	[class="btn"]{
+		width: 120px;
+		height: 50px;
+		margin-top: 10px;
+	}
+	[id="instruction-card"]{
+		background-color: #232b3b;
+            border-radius: 10px;
+            padding: 5px 5px 5px 10px;
+            color: white;
+            height: 13rem;
+	}
+	[id="card-info"]{
+		background-color: #232b3b;
+            border-radius: 10px;
+            padding: 25px 5px 5px 10px;
+            height: 13rem;
+	}
+}
